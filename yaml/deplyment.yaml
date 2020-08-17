@@ -1,9 +1,14 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tomcat-deployment
   labels:
     app: tomcat
+  annotations:
+    flux.weave.works/automated_user: Guna HK <guna.hk444@gmail.com>
+    flux.weave.works/automated: 'true'
+    flux.weave.works/automated_msg: test
 spec:
   replicas: 3
   selector:
