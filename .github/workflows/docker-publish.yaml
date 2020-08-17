@@ -22,10 +22,22 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
+
+    - name: Get current time
+      uses: 1466587594/get-current-time@v1
+      id: current-time
+      with:
+        format: YYYYMMDD-HH
+    - name: Use current time
+      env:
+        TIME: "${{ steps.current-time.outputs.time }}"
+        F_TIME: "${{ steps.current-time.outputs.formattedTime }}"
+      run: echo $TIME $F_TIME
+
     - name: Build and push Docker images
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: gunahk/gitops
-        tags: $(date +%Y%m%d%H%M%S)
+        tags: ${TIME}
