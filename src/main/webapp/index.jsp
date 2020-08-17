@@ -6,6 +6,6 @@
 	<link href="static/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1>Git Ops demo second commit</h1>
+	<h1>Git Ops demo third commit</h1>
 </body>
 </html>
