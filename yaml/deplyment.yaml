@@ -8,7 +8,6 @@ metadata:
   annotations:
     flux.weave.works/automated_user: Guna HK <guna.hk444@gmail.com>
     flux.weave.works/automated_msg: test
-    flux.weave.works/automated: 'true'
 spec:
   replicas: 3
   selector:
