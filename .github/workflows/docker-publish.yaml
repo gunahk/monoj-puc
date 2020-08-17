@@ -28,4 +28,4 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: gunahk/gitops
-        tags: gunahk/gitops:$(date +%Y%m%d%H%M%S)
+        tags: latest
