@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: gunahk/gitops:dev
+        image: gunahk/gitops:sha-df44ea9
         ports:
         - containerPort: 8080
