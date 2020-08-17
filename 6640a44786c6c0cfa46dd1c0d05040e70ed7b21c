@@ -1,0 +1,1 @@
+{"jobID":"c52f0b16-3e03-6445-7ee1-466fa8221170","spec":{"type":"policy","cause":{"Message":"test","User":"Guna HK \u003cguna.hk444@gmail.com\u003e"},"spec":{"default:deployment/tomcat-deployment":{"add":{"automated":"true","automated_msg":"test","automated_user":"Guna HK \u003cguna.hk444@gmail.com\u003e"},"remove":null}}},"result":null}
