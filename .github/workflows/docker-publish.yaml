@@ -28,5 +28,4 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: gunahk/gitops
-        tag_with_ref: true
-        push: ${{ startsWith(github.ref, 'refs/tags/') }}
+        tags: gunahk/gitops:$(date +%Y%m%d%H%M%S)
